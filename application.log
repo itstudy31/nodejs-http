@@ -1,0 +1,29 @@
+Listening on 8000
+[Sun Apr 05 2026 00:08:44 GMT+0900 (日本標準時)] Server Error Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Object.<anonymous> (/app/index.js:21:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+[Sun Apr 05 2026 00:09:40 GMT+0900 (日本標準時)] Requested by ::ffff:172.19.0.1
+[Sun Apr 05 2026 00:09:40 GMT+0900 (日本標準時)] Requested by ::ffff:172.19.0.1
+[Sun Apr 05 2026 00:09:42 GMT+0900 (日本標準時)] Requested by ::ffff:172.19.0.1
+[Sun Apr 05 2026 00:09:42 GMT+0900 (日本標準時)] Requested by ::ffff:172.19.0.1
+[Sun Apr 05 2026 00:11:07 GMT+0900 (日本標準時)] Client Error Error [ERR_HTTP_REQUEST_TIMEOUT]: Request timeout
+    at onRequestTimeout (node:_http_server:871:30)
+    at Server.checkConnections (node:_http_server:684:7)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {
+  code: 'ERR_HTTP_REQUEST_TIMEOUT'
+}
